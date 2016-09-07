@@ -1,0 +1,140 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+		<!--声明当前页面的编码集charset=GBK，gb2312(中文编码)，UTF-8(国际编码)-->
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<!--当前页面的三要素-->
+<title>JavaWeb开发轮展图切换效果 - Arry老师</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+	<!--js ,css-->
+	<!--css:层叠样式表 一件美丽的外衣-->
+	<style type="text/css">
+	#main {
+	padding: 0px;
+	height: 1024px;
+	width: 1280px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 40px;
+	background-image: url(images/bgimg.jpg);
+}
+    #top {
+	height: 50px;
+	width: 1280px;
+	margin: 0px;
+	padding: 0px;
+}
+    body,td,th {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+}
+    body {
+	background-color: #FFF;
+}
+    .g1 {
+	position: absolute;
+	left: 240px;
+	top: 446px;
+	height: 90px;
+}
+    .g2 {
+	position: absolute;
+	left: 135px;
+	top: 458px;
+}
+    .g3 {
+	position: absolute;
+	left: 48px;
+	top: 832px;
+}
+    .g4 {
+	position: absolute;
+	left: 239px;
+	top: 629px;
+	width: 99px;
+	height: 117px;
+}
+#searchfield {
+	background:url(images/searchbar.gif) no-repeat;
+	width:239px;
+	height:35px;
+	float:right;
+	padding-top: 4px;
+	padding-left: 30px;
+}
+    </style>
+</head>
+<body id="body">
+<!--以class="自定义名称" 称之为 类样式-->
+<div id="main">
+<div id="top">
+  <div id="search"><a href="www.goole.com"><img src="images/google.gif" width="320" height="50" /></a></div>
+  <div id="searchblock">
+  <form action="#">
+           <div id="searchfield">
+                        <ul>
+                          <li>
+                            <input type="text" name="keyword" class="keyword" /> 
+                              <input class="searchbutton" type="image" 
+                              src="images/searchgo.gif"  
+                               alt="search" />
+                          </li>
+                        </ul>
+           </div>
+    </form>
+</div>
+  <div id="pic"><img src="images/pic.gif" width="456" height="50" /></div>
+  <div id="connection">
+   <select name="链接" size="1" id="链接">
+     <option>起点</option>
+     <option>潇湘</option>
+     <option>环球中文网</option>
+   </select>
+    
+  </div>
+</div>
+<div id="left">
+
+<img src="images/huateng.gif" width="320" height="624" class="huateng" />
+<ul>
+  <li>
+  <a href="#"><img src="images/book.gif" width="88" height="88" class="g1" /> <span class="a2">报表统计</span> </a>
+  <a href="#"><img src="images/mp3.gif" width="79" height="79" class="g2" /> <span class="spanstyle1">门户网站</span></a>
+  <a href="#"><img src="images/bigflower.gif" width="94" height="92" class="g3" /><span class="a4">访客数据</span></a>
+  <a href="#"><img src="images/smallflower.gif" width="99" height="117" class="g4"  /><span class="a3">站长之家</span></a>
+  </li>
+</ul>
+</div>
+<div class="focus">
+  <p> <a href="#"> <img src="images/n.jpg" alt="美丽的时光-BestTime" width="960" height="853" /> </a> </p>
+  <p> <a href="#"> <img src="images/p.jpg" alt="美丽的时光-BestTime" width="960" height="853" /> </a> </p>
+  <p> <a href="#"> <img src="images/X.jpg" alt="美丽的时光-BestTime" width="960" height="853" /> </a> </p>
+  <p> <a href="#"> <img src="images/Z.jpg" alt="美丽的时光-BestTime" width="960" height="853" /> </a> </p>
+  <!--无序列表-->
+  <ul>
+    <li class="focus_A">no 不</li>
+    <li>personality</li>
+    <li>x 未知数</li>
+    <li>zeal 热情</li>
+  </ul>
+</div>
+<div id="bottom">                                                                                                     
+  <pre>                                                                                                                                  <strong>友情链接：<a href="www.qq.com">腾讯|</a><a href="www.sina.com">新浪</a>|<a href="www.taobao.com">淘宝</a>|<a href="www.163.com">网易</a>|<a href="www.jd.com">京东</a>|<a href="z.cn">亚马逊</a>|<a href="www.meituan.com">美团</a>|<a href="www.hao123.com">hao123</a></strong>              
+                                                                                                                                    <strong>COPYRIGHT&copy;2014  美生活 ALL RIGHT RESERVED</strong><strong></strong>
+                                                                                                                                       京备ICP 050411121   联系电话：010-8735641
+
+  </pre>
+</div>
+</div>
+<!--引入jQuery第三方类库-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--引入自定义js文件-->
+<script type="text/javascript" src="js/focus.js"></script>
+
+</body>
+</html>
