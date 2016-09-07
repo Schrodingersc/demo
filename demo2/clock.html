@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>炫酷时钟</title>
+<style>
+.img{width:150px;heigt:150px;}
+</style>
+<script>
+function toDou(n)
+{
+	if(n<10)
+	{
+		return '0'+n;
+		}
+		else
+		{
+			return ''+n;
+			}
+}
+window.onload=function()
+{
+	var aImg=document.getElementsByTagName('img');
+	function tick ()
+	{
+		var oDate=new Date();
+		var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+		for (var i=0;i<aImg.length;i++)
+		{
+			aImg[i].src='img/'+str.charAt(i)+'.jpg';
+		}
+	}
+	
+	setInterval(tick,1000);
+	tick ();	
+};
+</script>
+</head>
+
+<body style="background-image:url(img/10.jpg);color:white;font-size:50px;padding:80px;" >
+<img class="img" src="img/1.jpg"/>
+<img class="img"src="img/8.jpg"/>
+时
+<img class="img"src="img/5.jpg"/>
+<img class="img" src="img/2.jpg"/>
+分
+<img class="img"src="img/3.jpg"/>
+<img class="img"src="img/4.jpg"/>
+
+
+</body>
+</html>
