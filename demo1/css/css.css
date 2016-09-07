@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;font-size:12px;font-family:"微软雅黑";}
+		img{border:0;}
+#body #main #top #pic {
+	float: left;
+	height: 50px;
+	width: 456px;
+}
+
+		/*以.开头的css样式称之为类样式*/
+		.focus{
+	width:960px;
+	height:853px;
+	background:#FFCCCC;
+	overflow:hidden;
+	position:relative;
+	float: left;
+	clear: right;
+	margin: 0px;
+	border-bottom-width: 30px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+}
+#left {
+	margin: 0px;
+	padding: 0px;
+	height: 893px;
+	width: 320px;
+	float: left;
+}
+#bottom {
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+	width: 1280px;
+	background-color: #933;
+	clear: left;
+}
+
+
+		.focus ul{
+	position:absolute;
+	left:0px;
+	bottom:829px;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	width: 961px;
+	height: 23px;
+		}
+		.focus ul li{list-style:none;float:left;width:240px;background:#000;height:27px;
+			color:#FFFFFF;text-align:center;line-height:27px;cursor:pointer;
+		}
+		.focus ul .focus_A{background:red;}
+#conection {
+	height: 50px;
+	width: 120px;
+	float: right;
+	clear: none;
+	margin: 0px;
+	padding-left: 10px;
+}
+#body {
+	background-image: url(../images/BaiduShurufa_2014-8-6_14-48-36.png);
+}
+.huateng {
+	margin-top: 269px;
+}
+#body #main #left img {
+	clear: both;
+	padding-top: 0px;
+}
+.spanstyle1 {
+	width:83px;
+	height:24px;
+	display:block;
+	background:#B11A72;
+	text-align:center;
+	line-height:24px;
+	color:#fff;
+	font-weight:bold;
+	left: 142px;
+	top: 547px;
+	position: absolute;
+	
+}
+.a2 {
+	width:88px;
+	height:24px;
+	display:block;
+	background:#B11A72;
+	text-align:center;
+	line-height:24px;
+	color:#fff;
+	font-weight:bold;
+	position:absolute;
+	left: 250px;
+	top: 536px;
+}
+.a4 {
+	width:97px;
+	height:24px;
+	display:block;
+	background:#B11A72;
+	text-align:center;
+	line-height:24px;
+	color:#fff;
+	font-weight:bold;
+	position:absolute;
+	left: 49px;
+	top: 927px;
+}
+
+.a3 {
+	width:86px;
+	height:24px;
+	display:block;
+	background:#B11A72;
+	text-align:center;
+	line-height:24px;
+	color:#fff;
+	font-weight:bold;
+	position:absolute;
+	left: 225px;
+	top: 748px;
+}
+#body #main #top #search {
+	height: 50px;
+	width: 320px;
+	float: left;
+}
+#body #main #top #searchblock {
+	float: left;
+	height: 40px;
+	width: 300px;
+	padding-top: 10px;
+}
+#body #main #top #connection {
+	float: left;
+	height: 50px;
+	width: 200px;
+}
+#body #main #top #connection #链接 {
+	position: absolute;
+	left: 1171px;
+	top: 16px;
+}
