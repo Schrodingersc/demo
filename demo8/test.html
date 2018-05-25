@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>test your name</title>
+</head><script language="JavaScript">
+today=new Date();
+jran=today.getTime();
+function rnd() {
+ia=9301;
+ic=49297;
+im=233280;
+jran = (jran*ia+ic) % im;
+return jran/(im*1.0);
+};
+function rand(number) {
+return Math.ceil(rnd()*number);
+};
+document.write("<center>");
+for(i=1;i<=1;i++) {
+myNum=(rand(6)); //改成你要随机显示的图片数；
+if(myNum == 1) document.write("<img src='1.png'>"); //图片路径，可用http://
+if(myNum == 2) document.write("<img src='2.png'>");
+if(myNum == 3) document.write("<img src='3.png'>");
+if(myNum == 4) document.write("<img src='4.png'>"); //图片路径，可用http://
+if(myNum == 5) document.write("<img src='5.png'>");
+if(myNum == 6) document.write("<img src='6.png'>");
+else {
+document.write();
+}
+};
+document.write("</center>");
+</script>
+
+<body>
+</body>
+</html>

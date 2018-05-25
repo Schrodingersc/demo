@@ -1,0 +1,46 @@
+*{margin:0px;padding:0px;text-align:center;}
+.warp-main {width:375px; height:667px;background-size:100% 100%;}
+.header    {width:100%;height:150px;}
+.mid       {width:100%;height:375px;}
+.mid img{position:relative;width:375px;height:375px;}
+.btn-get{position:absolute;top:245px;left:140px; height:30px;line-height:30px;}
+.btn-get a{text-decoration:none;}
+.btn-shop a{text-decoration:none;}
+.btn-get p{font-family:微软雅黑;color:red;font-weight:bold;}
+
+.top{height:280px;}
+.money{position:relative;width:241px;height:240px;background-color:#ff4445;top:32px;left:67px; 
+	-moz-border-radius: 20px;      /* Gecko browsers */
+    -webkit-border-radius: 20px;   /* Webkit browsers */
+    border-radius:20px;            /* W3C syntax */
+    box-shadow: 0px 15px 15px 0px #b5291a;
+     }
+.coin img{width:375px;height:100px;}
+.see{font-size:15px;text-align:center;color:yellow;line-height:30px;}
+.share{position:relative; width:301px;height:50px;background-color:yellow;left:37px;top:10px;
+       -moz-border-radius: 10px;      /* Gecko browsers */
+       -webkit-border-radius: 10px;   /* Webkit browsers */
+       border-radius:10px;            /* W3C syntax */
+       /*box-shadow: 0px 5px 1px 0px #941a0b;*/
+       }
+.share p{position:relative; font-family:微软雅黑;color:red;font-weight:bold;font-size:26px;top:5px; }
+.share a{text-decoration: none;}
+.share-point p{position:relative;color:yellow;font-size:10px;top:25px;}
+.money-top p{height:120px;position:relative;font-family:微软雅黑;color: yellow;font-size:20px;font-weight:bold;top:40px;}
+.money-number p{position:relative;font-family:微软雅黑;color: yellow;font-size:50px;font-weight:bold;top:20px;}
+
+.whoget{position:relative; width:301px;height:280px;left:37px;}
+.whoget-top p{height:160px;position:relative;font-family:微软雅黑;color: yellow;font-size:20px;font-weight:bold;top:80px;}
+.whoget-history p{position:relative;font-family:微软雅黑;color:grey;font-size:10px;font-weight:bold;top:20px;}
+.phone-number{height:100px;}
+.phone-number p{font-size: 10px;line-height: 40px;color: yellow;}
+.phone-number input{width:280px;height:40px;
+                      -moz-border-radius: 10px;      /* Gecko browsers */
+                      -webkit-border-radius: 10px;   /* Webkit browsers */
+                      border-radius:10px;            /* W3C syntax */
+                    }
+ .share-point-phone p{position:relative;color:white;font-size:10px;top:25px;line-height: 15px;}
+ .btn-money{position: relative;top:-180px;height: 50px;}
+ .btn-money p{font-size:30px;color:yellow;line-height:50px;}
+ .btn-shop{position: relative;top: -180px; height:50px;}
+ .btn-shop p{font-size:20px;color:red;font-family:微软雅黑;line-height: 40px;}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>news and jobs</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+
+    body{
+    	padding-top: 50px;
+    	background-image: url(images/b1.jpg);
+    	background-repeat: repeat;
+    }
+    .tab-list{
+    	padding-top: 50px;
+    }
+    #news-list{
+    	border: solid;
+    	border-color: black;
+    	border-width: 2px;
+    	height: 470px;
+    	padding-top:20px;
+    	padding-left:5px; 
+    	margin-bottom: 50px;
+    }
+    #pager-bar{
+    	margin:10px;
+    }
+    #news-list li{
+    	list-style-type: none;
+    	line-height: 250%;
+    }
+    #news-content{
+    	margin-top: -40px;
+    	padding:30px;
+    	border: inset;
+    	border-width:1px;
+    	height: 100%;
+    	font-family: "微软雅黑"；
+    	font-indent:;
+    	font-size:15px;
+    	line-height: 200%;
+    }
+    #news-content h2{
+    	text-align: center;
+ 
+    }
+    #news-content img{
+    	width: 300px;
+    	height: 200px;
+    	margin-top: 30px;
+    	margin-bottom: 30px;
+    	margin-left:10%;
+
+    }
+    .footer-view{
+                 	padding:5px;
+                 	background-color: black;
+                 	position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    left: 0px;
+                 
+                   
+                 
+                 }
+     .footer-view .icp  {
+                 	font-size:15px;
+                 }
+      #home,#profile,#message,#settings{
+                 	margin-bottom: 5px;
+                 }
+       #job-welcome{ font-size: 15px;
+       	             font-style: ;
+       	             line-height: 200%;
+       	             text-indent:1cm;
+        
+       }
+       #accordion{
+       	padding-top: 50px;
+       	padding-bottom: 50px;
+       }
+       #h26.1{
+       	margin-left: 0px;
+       }
+
+    </style>
+    <script type="text/javascript">
+    $(function(){
+	$(".accordion-body").collapse
+	({
+		parent:"#box",
+		toggle:true	
+	});
+	$(".accordion-toggle").click(function()
+	{
+		$(this).parent().next().collapse("toggle");
+	})
+});  
+     
+</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand img-top" href="#"> <img alt="Brand" src="images/flipboard.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Firefox Browser</a></li>
+        <li><a href="index.html"     onclick="setactive(0);">公司介绍</a></li>
+        <li><a href="#profile"  onclick="setactive();">公司产品</a></li>
+        <li><a href="#message"  onclick="setactive(2);">企业文化</a></li>
+        <li><a href="#settings" onclick="setactive(3);">联系我们</a></li>
+        <li class="dropdown">
+          <a href="login.html" class="dropdown-toggle" data-toggle="dropdown">组织部门 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">房地产</a></li>
+            <li><a href="#">餐饮娱乐</a></li>
+            <li><a href="#">软件产业</a></li>
+            <li class="divider"></li>
+            <li><a href="#">财务部</a></li>
+            <li class="divider"></li>
+            <li><a href="#">办公室</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请在此输入">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="news-jobs.html" onclick="setactive(0);">公司新闻</a></li>
+        <li class="dropdown">
+          <a href="#" onclick="setactive(1);"  class="dropdown-toggle" data-toggle="dropdown">工作机会<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#" >校园招聘</a></li>
+            <li><a href="#">社会招聘</a></li>
+            <li><a href="#">留学生招聘</a></li>
+            <li class="divider"></li>
+            <li><a href="#">宣讲会行程</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+        
+       
+        
+  <div class="container">
+   <div class="tabbable">
+  <ul id="tab-bar"class="nav nav-pills" role="tablist"> 
+  <li class="active"><a href="#home" role="tab" data-toggle="tab">新闻中心</a></li> 
+  <li class="null"><a href="#profile" role="tab" data-toggle="tab">工作机会</a></li>  
+  </ul>
+
+
+  <div id="tab-content" class="tab-content tab-list"> 
+
+   <div class="tab-pane active" id="home">
+   <div class="row">
+        <div class="col-md-4">
+        <div id="news-list" >
+   	<li><a href="#">法国代表社会党参选的奥朗德今晨在大选中获得胜利</a></li>
+   	<li><a href="#">成为法兰西第五共和国第七位总统</a></li>
+   	<li><a href="#">法国也在17年之后迎来首位左翼总统</a></li>
+   	<li><a href="#">萨科齐在5年任内因政绩不佳引发不满</a></li>
+   	<li><a href="#">萨科齐虽试图打造“危机总统”形象，但终未能实现逆转</a></li>
+   	<li><a href="#">奥朗德现年58岁，至今未婚</a></li>
+   	<li><a href="#">与社会党前总统选举候选人罗亚尔同居30多年</a></li>
+   	<li><a href="#">多年来坚持骑车上下班。对华关系持强硬立场</a></li>
+   	<li><a href="#">萨科齐在5年任内因政绩不佳引发不满</a></li>
+   	<li><a href="#">萨科齐虽试图打造“危机总统”形象，但终未能实现逆转</a></li>
+   	<li><a href="#">奥朗德现年58岁，至今未婚</a></li>
+     <div id="pager-bar"
+   	 <ul class="pager"> 
+   	 <li>    <a href="#">前一页</a>  </li> 
+   	 <li>    <a href="#">后一页</a>  </li>
+   	 </ul>
+     </div>
+     	</div>
+     
+      
+   </div>
+   <div class="col-md-8">
+   <div id="news-content">
+   	
+   <h2>Pilot Pioneer安装步骤</h2>
+   <img src="images/firefox.jpg">
+   <p>
+第一步：首先进入安装向导页面，点击“NEXT”则继续安装，点击“Cancel”则退出安装；<br>
+第二步：选择安装路径。点击“Browse…”更改安装路径。点击“NEXT”继续安装，点击“Back”则返回上一级页面，点击“Cancel”则退出安装；<br>
+第三步：指定Pilot Pioneer的快捷方式在“开始—程序”中的位置。点击“Next”继续安装，点击“Back”则返回上一级页面，点击“Cancel”则退出安装；<br>
+第四步：在如下图所示页面上点“Install”按钮开始进行Pilot Pioneer的安装，点击“Back”按钮安装程序返回上一级操作，点击“Cancel”则退出安装；<br>
+第五步：安装过程中自动加载加密狗驱动，安装成功后点击“确定”按钮。 <br>    
+第六步：安装成功以后，弹出安装成功的提示信息，按“Finish”按钮完成软件安装。<br>
+安装后，将Pioneer.exe，PESQDLL，DTLog，Pioneer.lcfx烤至根目录下，安装完成。</p>
+<p>
+二．新建工程
+第一步：先将工具栏的英文转换为汉文，点击View→Language→Chinese。<br>
+第二步：转换成汉文之后，点击文件新建工程，或者单击工具栏的快捷按钮（快捷键为“Cnrl+N”），在工作区中弹出如下图所示的设置窗口。此时给数据选择一个存放的位置，设置完成后，点击“OK”按钮，Pilot Pioneer会自动打开一个新的导航栏和工作区。点击“Cancle”按钮，取消新增。<br>
+第三步：点击文件保存工程，或者单击工具栏的（快捷键为“Cnrl+N”），你做的是那个地方的项目文件就可以以这个地方的项目来命名，里面的工程也可以以项目来命名，保存后工程建立完成。</p>
+<p>
+三．地图的导入
+1.选择编辑→地图→导入，如下图：<br>
+2.选择Tab格式<br>
+3.然后找到你电脑里地图存放的位置，导入即可。<br>
+4.导入完成后，会在导航栏左侧的GIS信息中出现。<br>
+ 5.想要把导入好的道路信息导入到MAP地图中去，方法一是点击地图显示工具（Select MAPS DISplAY），路名TEXT和路线VECTOR，全部选中，点“OK”即可。<br>
+方法二是将导航栏左侧的GIS信息中的路名TEXT和路线VECTOR全部托入到MAP中去。</p>
+
+   </div> 
+   </div>
+   </div>
+   </div>
+
+    <div class="tab-pane" id="profile">
+
+    <div id="job-welcome" class="row">
+    	<div class="col-md-8">
+    		<p>阿里巴巴网络有限公司（香港联合交易所股份代号：1688）为全球领先的 B2B 电子商务公司。
+    		阿里巴巴每天 通过旗下三个网上交易市场连接世界各地的买家和卖家，其国际交易市场（alibaba.com）集中服务全球的进出口商，中国交易市场 alibaba.com.cn）集中服务中国大陆本土的贸易商，
+    		而日本交易市场（alibaba.co.jp）通过合资企 业经营，主要促进日本外销及内销。三个交易市场形成一个拥有来自 240 多个国家和地区的 4000 万名注册用户的网上社区。 </p> 
+    		<p>阿里巴巴的总部设于杭州，并在中国超过 40 个城市设有销售中心，另外在台湾、香港、欧洲及美国均设有办事处。  阿里巴巴从中国杭州初 18 名创业者开始成长为拥有超过数千名雇员的公司。
+    		我们努力为员工创造能够在积极、灵活和以结果为导向的环境中共同紧密工作的大家庭。无论我们成长为 多大的公司，强大的共享价值观使我们保有共同的公司文化和阿里之家。</p>
+    		<p>阿里巴巴的价值观是客户第一， 关注客户的关注点，为客户提供建议和资讯，帮助客户成长；团队合作， 共 享共担，以小我完成大我；拥抱变化，突破自我，迎接变化；诚信,诚实正直，信守承诺；激情，永不言弃，乐观向上 敬业， 以专业的态度和平常的心态做非凡的事情。 </p>
+    	</div>
+    	<div class="col-md-4">
+    	<video id="h26.1"width="360" height="240" controls="controls">
+         <source src="video/斗地主.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+         </video>
+
+    	</div>
+    </div>
+       <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+         研发岗位
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+
+        <div class="row">
+        <div class="col-md-4"> <li>硬件研发工程师<button type="button" class="btn btn-link">应聘</button></li></div>
+        <div class="col-md-4"> <li>嵌入式开发工程师</li></div>
+        <div class="col-md-4"> <li>云平台工程师</li></div>
+        </div>
+        <div class="row">
+        <div class="col-md-4"> <li>技术问档工程师<button type="button" class="btn btn-link">应聘</button></li></div>
+        <div class="col-md-4"> <li>软件开发工程师</li></div>
+        <div class="col-md-4"> <li>可靠性测试工程师</li></div>
+        </div>
+        <div class="row">
+        <div class="col-md-4">  <li>网络管理<button type="button" class="btn btn-link">应聘</button></li></div>
+        <div class="col-md-4">  <li>linux运维</li></div>
+        <div class="col-md-4">  <li>射频工程师</li></div>
+        </div>
+
+        <button type="button" class="btn btn-primary">投递简历</button>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          销售岗位
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        
+        <div class="row">
+        <div class="col-md-4"> <li>客户专员</li></div>
+        <div class="col-md-4"> <li>国际贸易</li></div>
+        <div class="col-md-4"> <li>订单管理</li></div>
+        </div>
+        <div class="row">
+        <div class="col-md-4"> <li>销售代表</li></div>
+        <div class="col-md-4"> <li>新市场开拓</li></div>
+        <div class="col-md-4"> <li></li></div>
+        </div>
+        <div class="row">
+        <div class="col-md-4">  <li></li></div>
+        <div class="col-md-4">  <li></li></div>
+        <div class="col-md-4">  <li></li></div>
+        </div>
+         <button type="button" class="btn btn-primary">投递简历</button>
+      </div>
+    </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        法律新闻类
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+       <div class="row">
+        <div class="col-md-4"> <li>对外新闻发布</li></div>
+        <div class="col-md-4"> <li>公关危机处理</li></div>
+        <div class="col-md-4"> <li>重大活动策划</li></div>
+        </div>
+        <div class="row">
+        <div class="col-md-4"> <li>贸易法务</li></div>
+        <div class="col-md-4"> <li>公司计划制定</li></div>
+        <div class="col-md-4"> <li></li></div>
+        </div>
+        <div class="row">
+        <div class="col-md-4">  <li></li></div>
+        <div class="col-md-4">  <li></li></div>
+        <div class="col-md-4">  <li></li></div>
+        </div>
+         <button type="button" class="btn btn-primary">投递简历</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+   </div>
+
+       </div> 
+          <hr class="divider">
+         </div>
+
+     <footer class="footer-view">
+        <div class="container">
+    	<p class="pull-right"><a href="#top">回到顶部</a></p>
+    	<p class="icp">2016 accurent 京备ICP：45891</p>
+        </div>
+     </footer>
+
+
+
+
+    <script src="js/jQuery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <script src="js/active.js"></script>
+  </body>
+</html>
