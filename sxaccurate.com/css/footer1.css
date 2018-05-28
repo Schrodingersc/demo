@@ -1,0 +1,259 @@
+ /*footer*/
+.site-footer {
+  background-color:#0e2335;
+  color:#fff
+}
+.site-footer .footer-nav {
+  padding:0 0 10px;
+  margin-left:0;
+  margin-bottom:0
+}
+.site-footer .footer-nav .col-md-12 {
+  padding:0
+}
+.site-footer .footer-nav .nav-group {
+  margin-top:5%;
+  float:left;
+  color:#777;
+  width:20%
+}
+.site-footer .footer-nav .nav-group h4 {
+  color:#AABDBD;
+  margin-bottom:20px
+}
+.site-footer .footer-nav .nav-group>li {
+  margin-bottom:20px
+}
+.site-footer .footer-nav .nav-group>li>a {
+  -webkit-transition:all .35s ease-in-out;
+  -o-transition:all .35s ease-in-out;
+  transition:all .35s ease-in-out;
+  text-decoration:none;
+  color:#777
+}
+.site-footer .footer-nav .nav-group>li>a:hover {
+  color:#ededed
+}
+.site-footer .footer-nav .nav-group>li .small {
+  display:block
+}
+.site-footer .copyright {
+  background-color:#000;
+  min-height:70px
+}
+.site-footer .copyright>a>img {
+  width:auto;
+  position:absolute;
+  visibility:hidden
+}
+.site-footer .copyright .text {
+  display:block;
+  float:left;
+  font-size:16px;
+  padding:24px 0
+}
+.site-footer .copyright .text,.site-footer .copyright .text a {
+  color:#a6a6a6
+}
+.site-footer .copyright .sns-info {
+  float:right;
+  margin:15px 0
+}
+.site-footer .copyright .sns-info>a.icon {
+  display:inline-block;
+  width:40px;
+  height:40px;
+  font-size:22px;
+  text-align:center;
+  line-height:40px;
+  border-radius:50%;
+  margin-right:10px;
+  cursor:pointer;
+  -webkit-transform:translateZ(0);
+  -webkit-backface-visibility:hidden
+}
+.site-footer .copyright .sns-info>a.icon .pop {
+  font-size:14px;
+  line-height:20px
+}
+.site-footer .copyright .sns-info>a.icon:hover {
+  color:#ededed
+}
+.site-footer .copyright .sns-info>a.icon:hover .pop {
+  display:block!important
+}
+.site-footer .copyright .sns-info>a.icon:last-child {
+  margin-right:0
+}
+.site-footer .copyright .sns-info>a.icon.icon-qq {
+  position:relative
+}
+.site-footer .copyright .sns-info>a.icon.icon-qq:after {
+  position:absolute;
+  left:0;
+  top:-20px;
+  width:38px;
+  height:38px;
+  content:""
+}
+.site-footer .copyright .sns-info>a.icon.icon-qq .pop {
+  display:none;
+  position:absolute;
+  top:-135px;
+  left:-87px;
+  width:214px;
+  height:130px;
+  background-color:#fff;
+  padding:20px;
+  border:1px solid #d5d8dd;
+  text-align:center;
+  box-shadow:0 1px 6px rgba(0,0,0,.15)
+}
+.site-footer .copyright .sns-info>a.icon.icon-qq .pop:after {
+  position:absolute;
+  left:99px;
+  bottom:-13px;
+  border:7px solid transparent;
+  border-top:7px solid #fff;
+  content:""
+}
+.site-footer .copyright .sns-info>a.icon.icon-qq .pop label {
+  color:grey;
+  margin-bottom:10px
+}
+.site-footer .copyright .sns-info>a.icon.icon-qq .pop p {
+  color:#a6a6a6;
+  margin-top:5px;
+  margin-bottom:10px;
+  text-align:left;
+  overflow:hidden;
+  text-overflow:clip;
+  white-space:nowrap
+}
+.box-content .content .category,.box-content .content .desc,.dropdown-menu li>a,.essage,.page-index .actions .update .new-title,.page-index .features .feature h4,.tbsite-list .category .nav-tabs>li>a {
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+.site-footer .copyright .sns-info>a.icon.icon-wechat {
+  position:relative
+}
+.site-footer .copyright .sns-info>a.icon.icon-wechat:after {
+  position:absolute;
+  left:0;
+  top:-20px;
+  width:38px;
+  height:38px;
+  content:""
+}
+.site-footer .copyright .sns-info>a.icon.icon-wechat .pop {
+  display:none;
+  position:absolute;
+  top:-210px;
+  left:-56px;
+  width:150px;
+  height:205px;
+  padding:20px 10px;
+  border:1px solid #d5d8dd;
+  background-color:#FFF;
+  text-align:center;
+  box-shadow:0 1px 6px rgba(0,0,0,.15)
+}
+.site-footer .copyright .sns-info>a.icon.icon-wechat .pop:after {
+  position:absolute;
+  left:68px;
+  bottom:-13px;
+  border:7px solid transparent;
+  border-top:7px solid #fff;
+  content:""
+}
+.site-footer .copyright .sns-info>a.icon.icon-wechat .pop label {
+  color:grey;
+  margin-bottom:0
+}
+.site-footer .copyright .sns-info>a.icon.icon-wechat .pop p {
+  color:#a6a6a6;
+  margin-bottom:10px
+}
+.site-footer .copyright .sns-info>a.icon.icon-wechat .pop .qr-wrapper {
+  width:120px;
+  height:120px;
+  margin:0 auto;
+  background-image:url(../images/global/weixin-qr.jpg);
+  background-size:120px 120px
+}
+.site-footer .copyright .mixpanel-box {
+  float:right;
+  margin-top:18px;
+  margin-left:18px
+}
+.en .site-footer .nav-group,.en .site-footer .other-products {
+  width:20%
+}
+.en .site-footer .desc-more .icon {
+  position:relative;
+  top:1px
+}
+.en .site-footer .sns-info>a.icon-qq .pop {
+  padding:20px 10px 20px 15px!important
+}
+@media (max-width:1199px) and (min-width:1025px) {
+  .site-footer .footer-nav .nav-group {
+  padding-left:1.5%;
+  width:20%
+}
+}@media (max-width:1024px) {
+  .site-footer .mixpanel-box {
+  display:none
+}
+.site-footer .footer-nav {
+  padding:15px 0
+}
+.site-footer .footer-nav .nav-group {
+  min-width:40%;
+  margin-left:5%;
+  text-align:left;
+  padding-top:10px;
+  border-bottom:1px dashed #6e6e6e;
+  margin-bottom:0;
+  height:244px
+}
+.site-footer .footer-nav .nav-group h4,.site-footer .footer-nav .nav-group>li {
+  margin-bottom:10px
+}
+.site-footer .footer-nav .nav-group:first-child {
+  min-width:40%
+}
+.site-footer .footer-nav .nav-group:nth-child(3),.site-footer .footer-nav .nav-group:nth-child(4) {
+  height:150px
+}
+.site-footer .footer-nav .nav-group:last-child {
+  min-width:80%;
+  width:100%;
+  height:150px;
+  border:none;
+  text-align:left;
+}
+.site-footer .copyright .text {
+  width:100%;
+  font-size:16px;
+  padding:14px 0 4px;
+  margin-bottom:0;
+  text-align:center
+}
+.site-footer .copyright .small {
+  display:block;
+  margin-top:8px
+}
+.site-footer .sns-info {
+  float:none!important;
+  text-align:center
+}
+}@media (max-width:360px) {
+  .site-footer .copyright {
+  padding-top:33px
+}
+.site-footer .copyright .text {
+  display:block;
+  padding:0;
+  margin-bottom:5px
+}
