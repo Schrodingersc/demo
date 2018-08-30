@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/join/join"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "平安信贷之家",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/ic_home_normal.png",
+      "selectedIconPath": "images/ic_home_pressed.png"
+    },
+    {
+      "pagePath": "pages/join/join",
+      "text": "加入我们",
+      "iconPath": "images/ic_join_normal.png",
+      "selectedIconPath": "images/ic_join_pressed.png"
+    }]
+  }
+}

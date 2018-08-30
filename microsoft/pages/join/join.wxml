@@ -1,0 +1,23 @@
+<!--pages/join/join.wxml-->
+<image class="banner" src="/images/about.jpg"></image>
+
+<view class='block'>
+  <view class='block-title'>关于我们</view>
+  <text class='block-desc'>中国平安致力于成为国际领先的个人金融生活服务提供商，坚持科技引领金融，金融服务生活的理念，推动核心金融业务和互联网金融业务共同发展，为客户创造“专业，让生活更简单”的品牌体验，获得持续的利润增长，向股东提供长期稳定的价值回报。</text>
+</view>
+
+<view class='block'>
+  <view class='block-title'>文化理念</view>
+  <text class='block-desc'>中国平安以“成为国际领先的个人金融生活服务提供商”为愿景，恪守企业社会责任，为客户、员工、股东和社会创造最大化的价值，倡导“以优秀的传统文化为基础，以追求卓越为过程，以价值最大化为导向，做一个品德高尚和有价值的人”的价值观，弘扬“专业领先、诚信服务、创造价值、回馈社会”的平安精神，坚持“专业创造价值”的品牌定位，在“综合金融+”和“互联网+”的新时代，实现“专业，让生活更简单”的客户体验。
+
+</text>
+</view>
+
+<view class='block'>
+  <view class='block-title'>加入我们</view>
+  <text class='block-desc'>中国平安继续贯彻“科技引领金融”的理念，围绕广大用户的“医、食、住、行”需求，不断丰富金融、生活场景，加强互联网用户经营，提升用户体验，推动互联网用户及客户迁徙，最终实现“一个客户、多种产品、一站式服务”，让平安成为客户的“财富管家、健康顾问、生活助手”。</text>
+</view>
+
+<view class='footer'>
+  <button bindtap='tell'>电话咨询</button>
+</view>
